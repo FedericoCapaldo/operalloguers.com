@@ -15,7 +15,7 @@ return;
 }
 
 if ( $product->get_type() === 'grouped' ) {
-echo '<a href="' . $product->get_permalink() . '">'. __( 'View products', 'woocommerce' ) . '</a>';
+echo '<div class="yith-ywraq-add-to-quote add-to-quote"> <div class="yith-ywraq-add-button show" style="display:block"> <a class="button view-products-listing-button" href="' . $product->get_permalink() . '">'. __( 'View products', 'woocommerce' ) . '</a> </div> </div>';
 }
 }
 // --
