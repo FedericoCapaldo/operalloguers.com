@@ -5,17 +5,12 @@ Description: This is a child theme for Trikon Theme.
 Author: Novaworks
 Author URI: http://www.novaworks.net/
 Template: trikon
-Version: 1.1
+Version: 1.19
 */
 
 /****************************************************************/
 /*************** ADD YOUR CUSTOM CSS IN THIS AREA ***************/
 /****************************************************************/
-div.yith-ywraq-add-button.show
-{
-	margin-top: -30px!important;
-}
-
 .woocommerce div.product.elementor .quantity
 {
 	margin-bottom: 40px;
@@ -41,13 +36,6 @@ div.otgs-development-site-front-end
 }
 
 /*Catàleg*/
-
-div.yith-ywraq-add-to-quote.add-to-quote-13433
-{
-	margin-top: -10px!important;
-}
-
-
 div.shop-display-type
 {
 	display: none!important;
@@ -94,17 +82,20 @@ div.yith_ywraq_add_item_browse_message.hide-when-removed a
 	border-left: 4px solid #008EB7!important;
 }
 
-.woocommerce .add-request-quote-button.button
-{
-	margin-top: -10px;
+.woocommerce .add-request-quote-button.button {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
 	font-size: 14px!important;
 	border-radius: 2px;
+  margin-top: 0!important; /* only rule that should be overwritten, rest should be in its own class */
 }
 
 
 .product-item
 {
 	border-radius: 4px;
+  min-height: 93%!important;
 }
 
 .elementor-2083 .elementor-element.elementor-element-4c0640c4 ul.products li.product .woocommerce-loop-product__title
@@ -150,7 +141,7 @@ ul.products .product .product-item .product-item__description .product-item__des
 }
 
 /** soporte**/
-.single-product .elementor-kitify-wooproducts li .yith-ywraq-add-to-quote {
+.single-product .elementor-kitify-wooproducts li {
   margin-top: -15px !important;
 }
 
@@ -481,19 +472,6 @@ input#nf-field-70:hover
 	border: solid 1px #008eb7;
 	background-color: transparent;
 	color: #008eb7;
-
-
-}
-
-/*PRESUPUESTO*/
-
-.woocommerce .add-request-quote-button.button
-{
-text-transform: uppercase;
-	font-size: 14px;
-	letter-spacing: 0.04em;
-	font-weight: 700;
-
 }
 
 div.kitify ul.products.kitify-products__list:not(.swiper-wrapper)
@@ -530,8 +508,6 @@ div.yith-ywraq-add-to-quote a:hover
 	border: solid 1px #008eb7;
 	background-color: transparent;
 	color: #008eb7;
-
-
 }
 
 
@@ -854,4 +830,22 @@ padding: 0px;
 .nova-woocommerce-tabs .shop_attributes tr th
 {
 width: 15%;
+}
+
+/* changed by Federico 24-01-24 */
+.view-products-listing-button {
+  text-transform: uppercase;
+  font-size: 14px!important;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  background-color: var(--ywraq_layout_button_bg_color) !important;
+  color: var(--ywraq_layout_button_color) !important;
+  border: 1px solid var(--ywraq_layout_button_border_color) !important;
+  border-radius: 2px;
+  transition: all 0.3s;
+  padding: 1rem 2rem;
+}
+.view-products-listing-button:hover {
+  color: #fff!important;
+  background-color: var(--site-link-hover-color)!important;
 }
